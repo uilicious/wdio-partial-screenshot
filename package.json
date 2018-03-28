@@ -1,0 +1,29 @@
+{
+  "name": "wdio-partial-screenshot",
+  "version": "1.0.0",
+  "description": "This is a WebdriverIO extension to take partial screenshot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uilicious/wdio-partial-screenshot.git"
+  },
+  "dependencies": {
+    "gm": ">=1.23.1",
+    "webdriverio": ">=4.10.2"
+  },
+  "keywords": [
+    "webdriverio",
+    "screenshot",
+    "partial",
+    "viewport"
+  ],
+  "author": "Tiong Jia Ming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uilicious/wdio-partial-screenshot/issues"
+  },
+  "homepage": "https://github.com/uilicious/wdio-partial-screenshot#readme"
+}
