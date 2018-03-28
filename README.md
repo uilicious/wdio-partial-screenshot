@@ -1,0 +1,1 @@
+# wdio-partial-screenshot
