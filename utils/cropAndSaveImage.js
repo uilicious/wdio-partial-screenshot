@@ -1,19 +1,21 @@
 const gm = require("gm")
 
 // Crop the image to the respective width and height of the view port while offsetting the correct x and y coordinates
-async function cropAndSaveImage(tmpFileName, pathName, options){
-	try{
+function cropAndSaveImage(tmpFileName, pathName, options) {
+	try {
 
-		return gm(tmpFileName)
+		return new Promise((resolve, reject) => {
+			gm(tmpFileName)
 			.crop(options.width, options.height, options.xOffSet, options.yOffSet)
 			.write(pathName, (err) => {
-				if(err){
-					throw err;
+				if (err) {
+					reject(err);
 				}
-				// return an arbitrary value
-				return true;
-			})
-	}catch(e){
+			resolve(true);
+		})
+	});
+
+	} catch (e) {
 		console.log(e)
 	}
 

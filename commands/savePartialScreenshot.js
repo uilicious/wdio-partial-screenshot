@@ -1,8 +1,7 @@
 const cropAndSaveImage = require('../utils/cropAndSaveImage')
 const base58guid = require("../utils/base58guid")
 
-// Note: function name must be async to signalize WebdriverIO that this function returns a promise
- async function async(fileName, options){
+ async function savePartialScreenshotAsync(fileName, options){
 
 	// Prepare variables
 	let tmpName =  "/tmp/" + base58guid() + ".png";
@@ -28,4 +27,4 @@ const base58guid = require("../utils/base58guid")
 
 }
 
-module.exports = async;
+module.exports = savePartialScreenshotAsync;
